@@ -49,7 +49,9 @@ padding: 10px 20px;
 export const CategoryList = styled.li`
   display: flex;
   list-style: none;
-  padding: 5px 5px;
+  padding: auto;
+  justify-content:center;
+
 `;
 
 export const CategoryListContainer = styled.div`
@@ -57,6 +59,8 @@ export const CategoryListContainer = styled.div`
   border: 1px solid ${colors.light};
   border-radius: 4px; 
   margin-top:5%;
+  margin-bottom:5%;
+
   width: 50%;
 `;
 
@@ -77,8 +81,9 @@ export const Input = styled.input`
   height: 30px;
   color: ${colors.primary};
   width: 70%;
-  margin: auto;
-
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px 20px;
   &::placeholder {
     color: ${colors.grey};
   }
@@ -95,8 +100,10 @@ export const Button = styled.button`
   font-weight: 500;
   background:${colors.light};
   color: ${colors.primary};
-  margin-left:80%;
-  margin-bottom:5%;
+  margin-left:85%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
 
   &:hover {
     color: ${colors.dark};
