@@ -1,9 +1,5 @@
 import React from 'react';
 import {
-    Navbar,
-    NavLinks,
-    NavLink,
-    NavItem,
     FooterHeadContainer,
     FooterHeadText,
     Header,
@@ -11,7 +7,6 @@ import {
     CategoryList,
     Button,
     Input,
-    NoteDescription,
     CategoryListContainer,
     NoteContainer
 } from '../styles';
@@ -43,7 +38,10 @@ const Home = () => {
                 placeholder="Add Item"
         />
         </CategoryList>
+
+        <CategoryList>
         <Button>+</Button>
+        </CategoryList>
 
         </CategoryListContainer>
 

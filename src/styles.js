@@ -7,36 +7,6 @@ export const colors ={
     grey: "#D3D3D3"
 }
 
-export const Navbar = styled.div`
-  width: 100%;
-  height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: ${colors.dark};
-  display: flex;
-  align-items: center;
-  opacity:0.8;
-`;
-
-export const NavLinks = styled.ul`
-  display: flex;
-  list-style: none;
-`;
-
-export const NavItem = styled.li`
-  & + & {
-    margin-left: 20px;
-  }
-`;
-
-export const NavLink = styled.a`
-  text-decoration: none;
-  color: ${colors.primary};
-  text-transform: capitalize;
-  font-weight: bold;
-`;
-
 export const NoteContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -73,19 +43,21 @@ export const Header = styled.h1`
 export const NoteTitle = styled.h2`
 font-size: 18px;
 color: ${colors.primary} ;
-padding: 20px 20px;
+padding: 10px 20px;
 `;
 
 export const CategoryList = styled.li`
   display: flex;
   list-style: none;
-  padding: 10px 20px;
+  padding: 5px 5px;
 `;
 
 export const CategoryListContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid ${colors.light};
   border-radius: 4px; 
-  margin: 10%; 
+  margin-top:5%;
+  width: 50%;
 `;
 
 export const NoteDescription = styled.p`
@@ -105,7 +77,7 @@ export const Input = styled.input`
   height: 30px;
   color: ${colors.primary};
   width: 70%;
-  margin-top: 10%;
+  margin: auto;
 
   &::placeholder {
     color: ${colors.grey};
@@ -123,9 +95,8 @@ export const Button = styled.button`
   font-weight: 500;
   background:${colors.light};
   color: ${colors.primary};
-  margin-left: 70%;
-  margin-bottom: 10%;
-  margin-top: 10%;
+  margin-left:80%;
+  margin-bottom:5%;
 
   &:hover {
     color: ${colors.dark};
