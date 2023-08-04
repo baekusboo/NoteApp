@@ -6,12 +6,14 @@ import {
     NavItem,
     FooterHeadContainer,
     FooterHeadText,
-    FormGroup,
     Header,
     NoteTitle,
     CategoryList,
-    NoteItem,
-    NoteDescription
+    Button,
+    Input,
+    NoteDescription,
+    CategoryListContainer,
+    NoteContainer
 } from '../styles';
 
 const Category = () => {
@@ -31,38 +33,33 @@ const Category = () => {
         </NavLinks>
       </Navbar>
 
-    <Header>Category</Header>
-        
-    <FormGroup>
+    <Header>Note App</Header>
+
+    <NoteContainer>
+
+<CategoryListContainer>
+<NoteTitle>Grocery List</NoteTitle>
 
         <CategoryList>
-            <NoteTitle>
-                Note Title 1
-            </NoteTitle>
-            <NoteDescription>
-                Note 1 description
-            </NoteDescription>
-        </CategoryList>
-    
-        <CategoryList>
-            <NoteTitle>
-                Note Title 2
-            </NoteTitle>
-            <NoteDescription>
-                Note 2 description
-            </NoteDescription>
+          <Input
+                name="title"
+                type="text"
+                label="Title"
+                placeholder="Add Item"
+        />
         </CategoryList>
 
         <CategoryList>
-            <NoteTitle>
-                Note Title 3
-            </NoteTitle>
-            <NoteDescription>
-                Note 3 description
-            </NoteDescription>
+        <Input
+                name="title"
+                type="text"
+                label="Title"
+                placeholder="Add Item"
+        />
         </CategoryList>
-        
-    </FormGroup>
+        </CategoryListContainer>
+    </NoteContainer>
+    <Button>Add</Button>
 
       <FooterHeadContainer>
             <FooterHeadText>

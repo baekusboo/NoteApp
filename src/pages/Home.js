@@ -6,95 +6,52 @@ import {
     NavItem,
     FooterHeadContainer,
     FooterHeadText,
-    FormGroup,
     Header,
     NoteTitle,
     CategoryList,
     Button,
-    Select,
+    Input,
     NoteDescription,
-    PageContainer
+    CategoryListContainer,
+    NoteContainer
 } from '../styles';
 
 const Home = () => {
   return (
     <div>
-      <Navbar>
-        <NavLinks>
-          <NavItem>
-            <NavLink href="/login">Login</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/signup">Signup</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/">Home</NavLink>
-          </NavItem>
-        </NavLinks>
-      </Navbar>
 
-    <Header>Note App</Header>
-   <PageContainer>
-    <FormGroup>
+<NoteContainer>
+<CategoryListContainer>
+<Header>Note App</Header>
 
         <CategoryList>
-        <NoteTitle>Genre 1</NoteTitle>
-        <Select>
-         <option value="Enter the subject">Enter the subject</option>
-         <option value="science">Science</option>
-         <option value="eng">English</option>
-         <option value="maths">Maths</option>
-         <option value="social">Social</option>
-         <option value="gk">GK</option>
-         </Select>
-         <Button>Button</Button>
+        <NoteTitle>1</NoteTitle>
+        <Input
+                name="title"
+                type="text"
+                label="Title"
+                placeholder="Add Item"
+        />
         </CategoryList>
 
         <CategoryList>
-        <NoteTitle>Genre 1</NoteTitle>
-        <Select>
-         <option value="Enter the subject">Enter the subject</option>
-         <option value="science">Science</option>
-         <option value="eng">English</option>
-         <option value="maths">Maths</option>
-         <option value="social">Social</option>
-         <option value="gk">GK</option>
-         </Select>
-         <Button>Button</Button>
+        <NoteTitle>2</NoteTitle>
+        <Input
+                name="title"
+                type="text"
+                label="Title"
+                placeholder="Add Item"
+        />
         </CategoryList>
+        <Button>+</Button>
 
-        <CategoryList>
-        <NoteTitle>Genre 1</NoteTitle>
-        <Select>
-         <option value="Enter the subject">Enter the subject</option>
-         <option value="science">Science</option>
-         <option value="eng">English</option>
-         <option value="maths">Maths</option>
-         <option value="social">Social</option>
-         <option value="gk">GK</option>
-         </Select>
-         <Button>Button</Button>
-        </CategoryList>
+        </CategoryListContainer>
 
-        <CategoryList>
-        <NoteTitle>Genre 1</NoteTitle>
-        <Select>
-         <option value="Enter the subject">Enter the subject</option>
-         <option value="science">Science</option>
-         <option value="eng">English</option>
-         <option value="maths">Maths</option>
-         <option value="social">Social</option>
-         <option value="gk">GK</option>
-         </Select>
-         <Button>Button</Button>
-        </CategoryList>
+    </NoteContainer>
 
-    </FormGroup>
-    </PageContainer>
       <FooterHeadContainer>
             <FooterHeadText>
-                &copy; {new Date().getFullYear()} Copyright:{' '}
-                Note App Coderizz Projects
+                Note App - Made by Team Coderizz
             </FooterHeadText>
         </FooterHeadContainer>
 
