@@ -40,7 +40,10 @@ const Home = () => {
         </CategoryList>
 
         <CategoryList>
-        <Button>+</Button>
+        <Button> 
+          + 
+          {/* funtionality to be added */}
+        </Button>
         </CategoryList>
 
         </CategoryListContainer>
