@@ -53,7 +53,7 @@ export const Header = styled.h1`
   color: ${colors.primary};
   text-align: center;
   text-transform: capitalize;
-  margin-top: 10%;
+  margin-top: 5%;
 `;
 
 export const NoteTitle = styled.h2`
@@ -67,6 +67,7 @@ export const CategoryList = styled.li`
   list-style: none;
   padding: auto;
   justify-content:center;
+  text-align: center;
 
 `;
 
@@ -82,10 +83,11 @@ export const CategoryListContainer = styled.div`
 `;
 
 export const NoteDescription = styled.p`
-  font-size: 18px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  font-size: 16px;
+  margin: auto;
   color: ${colors.primary} ;
+  text-align: center;
+  margin-bottom: 1%;
 `;
 
 export const Input = styled.input`
@@ -123,8 +125,30 @@ export const Button = styled.button`
   margin-right: 5%;
 
   &:hover {
-    color: ${colors.dark};
-    background: rgba(255, 255, 255, 0.1);
+    color: ${colors.primary};
+    background: ${colors.dark};
+  }
+
+`;
+
+export const Loginbutton = styled.button`
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  text-align: center;
+  border-radius: 4%;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-weight: 500;
+  background:${colors.light};
+  color: ${colors.primary};
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+  &:hover {
+    color: ${colors.primary};
+    background: ${colors.dark};
   }
 
 `;
