@@ -3,18 +3,21 @@ import {
     FooterHeadContainer,
     FooterHeadText,
     Header,
-    NoteTitle,
     CategoryList,
     Button,
     Input,
-    NoteDescription,
     CategoryListContainer,
-    NoteContainer
+    NoteContainer,
+    GlobalStyle,
+    Bg,
 } from '../styles';
+import backgroundImage from '../bg-image.jpg';
 
 const Category = () => {
   return (
     <div>
+    <GlobalStyle />
+    <Bg backgroundImage={backgroundImage}>
 
 <NoteContainer>
 <CategoryListContainer>
@@ -40,17 +43,21 @@ const Category = () => {
             placeholder="Add List Item"
           />
         </CategoryList>
+        <CategoryList>
+        <Button> 
+          + 
+          {/* funtionality to be added */}
+        </Button>
+        </CategoryList>
 
-        <Button>+</Button>
-
-</CategoryListContainer>
-</NoteContainer>
-
-      <FooterHeadContainer>
+        </CategoryListContainer>
+        <FooterHeadContainer>
             <FooterHeadText>
                 Note App - Made by Team Coderizz
             </FooterHeadText>
         </FooterHeadContainer>
+    </NoteContainer>
+    </Bg>
     </div>
   );
 };

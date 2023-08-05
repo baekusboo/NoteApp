@@ -1,11 +1,30 @@
 import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-export const colors ={
+export const GlobalStyle = createGlobalStyle`
+  body, html, div {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+`;
+
+export const colors = {
     primary: "#000000",
     light: "#4BD5E7",
     dark: "#1ECBE1",
-    grey: "#D3D3D3"
+    grey: "#D3D3D3",
+    white: "#fff"
 }
+
+export const Bg = styled.div`
+align-items: center;
+justify-content: center;
+background-image: url(${props => props.backgroundImage});
+background-size: cover;
+background-position: center;
+/* Add more background-related styles as needed */
+`;
 
 export const NoteContainer = styled.div`
   display: flex;
@@ -19,15 +38,12 @@ export const FooterHeadContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px;
-  position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 3;
 `;
 
 export const FooterHeadText = styled.p`
-  color: ${colors.dark};
+  color: ${colors.primary};
   font-size: 14px;
   font-weight: 500;
   text-align: center;
@@ -55,12 +71,13 @@ export const CategoryList = styled.li`
 `;
 
 export const CategoryListContainer = styled.div`
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px ${colors.light};
+  opacity: 90%;
   border: 1px solid ${colors.light};
   border-radius: 4px; 
   margin-top:5%;
   margin-bottom:5%;
-
+  background:${colors.white};
   width: 50%;
 `;
 

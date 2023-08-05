@@ -7,13 +7,17 @@ import {
     CategoryList,
     Button,
     Input,
+    Bg,
     CategoryListContainer,
-    NoteContainer
+    NoteContainer,
+    GlobalStyle
 } from '../styles';
-
+import backgroundImage from '../bg-image.jpg';
 const Home = () => {
   return (
     <div>
+    <GlobalStyle />
+    <Bg backgroundImage={backgroundImage}>
 
 <NoteContainer>
 <CategoryListContainer>
@@ -47,16 +51,15 @@ const Home = () => {
         </CategoryList>
 
         </CategoryListContainer>
-
-    </NoteContainer>
-
-      <FooterHeadContainer>
+        <FooterHeadContainer>
             <FooterHeadText>
                 Note App - Made by Team Coderizz
             </FooterHeadText>
         </FooterHeadContainer>
-
+    </NoteContainer>
+    </Bg>
     </div>
+
   );
 };
 
